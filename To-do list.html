@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="to-dolist.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column">
+            <h2>Add Task</h2>
+            <form id="addForm">
+                <input type="text" id="taskInput" placeholder="Enter task...">
+                <input type="datetime-local" id="taskDateTime" min="2024-01-01T00:00" max="2025-12-31T23:59">
+                <button type="submit">Add</button>
+            </form>
+            <ul id="tasks">
+                <!-- Tasks will be added dynamically here -->
+            </ul>
+        </div>
+        <div class="column">
+            <h2>Completed Tasks</h2>
+            <ul id="completedTasks">
+                <!-- Completed tasks will be shown here -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
